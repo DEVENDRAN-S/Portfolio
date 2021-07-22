@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Poppins:ital,wght@0,300;1,200;1,500&family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+.max-width{
+     max-width:1300px;
+     padding:0 80px;
+     margin:auto;
+
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    padding:15px 0;
+}
+.navbar.sticky
+{
+    padding:15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar .logo a{
+    color:#fff;
+    font-size:35px;
+    font-weight:600;
+}
+.navbar .logo a span{
+    color:cornflowerblue;
+}
+.navbar .menu li{
+    list-style:none;
+    display:inline-block;
+}
+.navbar .menu li a{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+    margin-left:25px;
+    font-family:'Poppins',sans-serif;
+    transition:color 0.3s ease;
+
+}
+.navbar .menu li a:hover{
+    color:crimson;
+}
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display:none;
+}
+
+.home{
+    display:flex;
+    background: url("images/devasupra.jpg")no-repeat center;
+    height: 1000px;
+    color:#fff;
+}
+.home .max-width
+{
+    margin:auto 0 auto 700px;
+}
+.home .homecontent .text1
+{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.home .homecontent .text2
+{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.home .homecontent .text2 span{
+    color:rgb(226, 43, 43);
+    font-weight:600;
+}
+.home .homecontent .a{
+    display:inline-block;
+    background: Crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .homecontent .a:hover{
+    color: crimson;
+    background:none;
+}
+.section{
+    padding: 100px 0;
+}
+.about, .services, .skills , .projects{
+    font-family: 'Poppins',sans-serif;
+}
+.about .aboutcontent , .services .servcontent {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .aboutcontent .left{
+    width:45%;
+}
+.about .aboutcontent .left img{
+    height: 400px;
+    width:400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .aboutcontent .right {
+    width:55%;
+}
+.about .aboutcontent .right .text{
+    text-align: justify;
+}
+section .title{
+    position:relative;
+   text-align: center; 
+   font-size: 40px;
+   font-weight: 500;
+   margin-bottom: 60px;
+   padding-bottom: 20px;
+
+}
+section .title::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    width:180px;
+    height:3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position:absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding:5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+}
+.about .aboutcontent .right a{
+    display:inline-block;
+    background: Crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .aboutcontent .right a:hover{
+    color: crimson;
+    background:none;
+
+}
+.services .title{
+    position:relative;
+   text-align: center; 
+   font-size: 40px;
+   font-weight: 500;
+   padding-top: 60px;
+   margin-bottom: 60px;
+   padding-bottom: 20px;
+
+}
+.services .title::before{
+    content:"";
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    width:180px;
+    height:3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content:"Undertaken";
+    position:absolute;
+    bottom:-10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding:5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.services , .projects{
+    color:#fff;
+    background: #111;
+    padding-bottom:100px;
+}
+.services .title::before ,
+.projects .title::before
+{
+    background: #fff;
+}
+.services .title::after , 
+.projects .title::after
+{
+    background: #111;
+    content:"undertken"
+}
+.services .servcontent .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    border:200px 20px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+.services .servcontent .card:hover{
+    background:crimson;
+}
+.services .servcontent .card .box
+{
+transition:all 0.3s ease;
+}
+.services .servcontent .card:hover .box{
+    transform:scale(1.05);
+}
+.services .servcontent .card img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    border-radius: 50%;
+}
+.services .servcontent .card .text{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: crimson;
+    transition:all 0.3s ease;
+}
+.services .servcontent .card .text:hover{
+    color: #fff;
+}
+.services .servcontent .card p
+{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 20px;
+}
+.skills {
+    padding-bottom:30px;
+}
+.skills .title{
+    padding-top: 20px;
+}
+.skills .title::after
+{
+    content:"what i know"
+}
+.skills .skill-content .right{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.skills .skill-content .right .bars{
+    margin-bottom:30px;
+}
+.skills .skill-content .right .info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.skills .skill-content .right span{
+    font-weight: 500;
+    font-size: 20px;
+}
+.skills .skill-content .right .line{
+    height:5px;
+    width:100%;
+    background:grey;
+}
+.skills .skill-content .right .line::before{
+    height:5px;
+    width:80%;
+    background:crimson;
+
+}
+.projects .title{
+    padding-top: 20px;
+}
+.projects .title::after
+{
+    content:"what i done"
+}
+.projects .carousel .card{
+    background:#222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.projects .carousel .card:hover{
+    background: crimson;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card .box:hover{
+    transform:scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height:150px;
+    width:150px;
+    align-items: center;
+    object-fit:cover;
+    border-radius: 50%;
+    border:5px solid crimson;
+    transition:all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+.contact{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
+.contact .title{
+    padding-top: 20px;
+}
+.contact .title::after{
+    content:"Get in touch"
+}
+.contact .mail a{
+    padding-top: 20px;
+    font-size: 30px;
+    color:crimson;
+}
+.contact .mail {
+    font-size: 30px;
+}
+
+.contact  .social-icon  i{
+    padding-top:20px;
+    padding-right: 10px;
+    color: black;
+    transition: all 0.3s ease;
+}
+.contact  .social-icon  i:hover{
+   color:crimson;
+   transform:scale(1.05);
+}
